@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/publishedAtTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Published at"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/newsSourceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Times of India"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/publishedAtTv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/newsTittleTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:text="Three Things I Think I Think – Bonds, Bear Markets &amp; ESG"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/newsImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/publishedAtTv" />
+
+        <TextView
+            android:id="@+id/newsDescTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:text="Here are some things I think I am thinking about: 1) Is The Bond Bear REALLY Over Now?  JP Morgan issued a bottom call in bonds yesterday. The basic thesis"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/newsImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newsTittleTv" />
+
+        <ImageView
+            android:id="@+id/newsImageView"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:contentDescription="@string/content_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_icon"
+            app:circularflow_radiusInDP="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newsSourceTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    <!--
+    Title
+     Description
+     PublishedAt
+     Source of the news e.g. BBC
+     An image at the right side of the card
+    -->

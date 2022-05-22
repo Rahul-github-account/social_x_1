@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuRefresh"
+        android:icon="@drawable/refresh_icon_refresh_24"
+        android:title="Refresh" />
+
+    <item
+        android:id="@+id/signOut"
+        android:icon="@drawable/logout_icon_exit_to_app_24"
+        android:title="Sign Out" />
+
+</menu>

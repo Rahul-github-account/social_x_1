@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Social X</string>
+    <string name="content_desc">content desc</string>
+    <string name="facebook_app_id">1354671145019160</string>
+    <string name="fb_login_protocol_scheme">fb1354671145019160</string>
+    <string name="facebook_client_token">05cf8e401d5ec0820a5cb2d7ef05cbd8</string>
+
+</resources>
